@@ -59,13 +59,17 @@ form {
 }
 
 h1 {
-  padding: 10px 0;
+  padding: 10px 0 30px;
 }
 
 label {
   display: block;
-  width: 200px;
+  width: 300px;
   padding: 5px 0px;
+
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 input {
@@ -108,6 +112,7 @@ button {
   background-color: rgb(124, 67, 36);
 
   font-size: large;
+  font-weight: bold;
   color: white;
 }
 
