@@ -1,3 +1,8 @@
+@font-face {
+  font-family: norse-font;
+  src: url(/files/Norse-Bold.otf);
+}
+
 :root {
   --left-global-padding: 40px;
   font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +20,9 @@ body {
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 40%;
   background-image: url("./files/aside-background.jpg");
   background-size: cover;
@@ -22,21 +30,46 @@ aside {
   flex: 1 0 auto;
 }
 
-#logo {
-  margin-top: 20vw;
-  height: 200px;
+#logo-background {
+  margin-top: 10vw;
+  height: 150px;
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url("/files/logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-blend-mode: color;
 }
 
+#logo-container {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  height: 100px;
+  width: 75px;
+  background-image: url("/files/logo.png");
+  background-size: cover;
+}
+
+#logo-title {
+  font-family: norse-font;
+  font-size: 4em;
+  padding-top: 15px;
+  color: white;
+}
+
+#image-credit, #image-credit a {
+  color:rgb(189, 189, 189);
+}
+
+#image-credit {
+  text-align: center;
+  padding-bottom: 15px;
+}
 main {
+  /* width: 70em; */
   height: 100vh;
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
+  /* flex: 1 0 auto; */
 }
 
 #header {
